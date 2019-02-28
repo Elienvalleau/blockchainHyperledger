@@ -51,7 +51,7 @@ class chaincodeClass extends Contract {
 		};
 
 		await ctx.stub.putState(proofNumber, Buffer.from(JSON.stringify(validateTask)));
-		console.info('------------------ ok validation ------------------)
+		console.info('------------------ ok validation ------------------')
 	}
 
 	async createUser(ctx, idUser, levelRight, name, amountCoin){
