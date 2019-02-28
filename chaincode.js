@@ -47,7 +47,7 @@ class chaincodeClass extends Contract {
 	async validateTask(ctx, proofNumber, validation){
 		const validateTask = {
 			proofNumber,
-			validatation,
+			validation,
 		};
 
 		await ctx.stub.putState(proofNumber, Buffer.from(JSON.stringify(validateTask)));
